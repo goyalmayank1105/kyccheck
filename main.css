@@ -42,3 +42,55 @@
     right: 50px;
 }
 
+#cover{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    width:100%;
+    height:100%;
+    display:none;
+  }
+#detecting
+  {
+    height:180px;
+    width:200px;
+    margin:0 auto;
+    position:relative;
+    z-index:10;
+    display:none;
+    background: url(test.gif) no-repeat;
+    border:5px solid #cccccc;
+    border-radius:10px;
+  }
+#detecting:target, #detecting:target + #cover{
+    display:block;
+    opacity:3;
+  }
+
+#cover1:target{
+    display:block;
+    opacity:3;
+}  
+
+ .detection_result{
+    height:180px;
+    width:200px;
+    margin:0 auto;
+    position:relative;
+    display: block;
+    border:5px solid #cccccc;
+    border-radius:10px;
+ } 
+
+#cover1{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    width:100%;
+    height:100%;
+    display:none;
+  }
